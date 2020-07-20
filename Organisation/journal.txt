@@ -1,0 +1,156 @@
+﻿Journal.
+Chaque trinôme tiendra à jour un journal de développement inclus dans son répertoire git. Chaque semaine, vous indiquerez dans votre journal vos objectifs pour la semaine à venir, et vos résultats de la semaine passée. Dans la mesure du possible, faites en sorte que chaque commit corresponde à une tâche précise et soit effectué par la personne ayant effectué latâche. Un dépôt git n’est pas limité à du code, n’hésitez pas à y inclure d’autres documents qui nous permettront de suivre votre travail, par exemple : des courts résumés de prise de décision, des notes sur le fonctionnement des bibliothèques que vous allez utiliser, la structure que vous projetez pour vos modules, etc.
+
+[N'hésitez pas à me corriger (mon francais)]
+
+♦ Semaine du 4/2/2019
+
+Objectifs:
+- Comprendre ce qu'on doit faire
+- Diviser les tâches entre nous
+- Commencer le projet
+
+Résultats de la semaine passée:
+ - Création de l'equipe
+
+
+Les tâches:
+
+Tolulope: 
+Je ne suis pas très douée pour le langage C parce que je dois l'apprendre pour faire ce cours (Je ne l'ai pas appris à l'université en Angleterre). Je ne me sens pas a l'aise avec une grande tâche en ce moment.
+J'ai beaucoup d'expérience avec Git et ça me convient de remplir le journal. J'ai créé un board Trello aussi.
+J'aimerais bien entendre comment vous pensez qu'on doit diviser les tâches.
+
+Dorothee:
+
+
+
+
+♦ Semaine du 12 février
+
+Objectifs:
+- Commencer avec le programme
+
+Résultats de la semaine passée:
+ - L'exécution de SDL
+
+Asmaa:
+-Installation de git sur windows et clonage du projet.
+-Lecture de sdl_exemple et familiarisation avec le fonctionnement de SDL et les différentes méthodes.
+
+Dorothee:
+12 février : J'ai finalement réussi aujourd'hui à exécuter le programme sdl_exemple fourni par M. Padovani. Maintenant je peux me concentrer sur commencer le projet. Pour répondre à Tolulope sur la répartition des tâches, je pense que nous pourrions avancer en prenant une tâche dans l'énoncé chacune et la faire. Puis une fois finie, prendre une tâche non faite et la faire. Une tâche serait par exemple : Partie transformation, Symétrie verticale.
+Je peux aussi écrire les tâches de développement sur Trello, et comme ça on saura ce qu'on a fait et ce qu'il reste à faire pour la partie développement.
+Tolulope, est-ce que tu peux mettre le lien vers le board Trello que tu as crée ?
+
+
+Tolulope: J'appris C pendant la semaine dernière. Je vais continuer de travailler là-dessucette semaine. Tout est pret en ce qui concerne Trello. Voici le lien : https://trello.com/invite/b/wCjoexgq/d465dd22e6b97a48c46c8a9a40f0df52/cimp
+
+
+
+♦ Semaine du 19 février:
+
+Asmaa:
+-J'ai essayé d'installer SDL2 sur windows, mais j'ai eu des problèmes en l'installant sur code:blocks.
+
+Dorothée:
+21 février: Installation de SDL_Image 2 (paquet libsdl2-image-2.0-0 dans Ubuntu et Debian) car c'est la dernière version
+qui est sortie et que d'après la page de changements (https://www.libsdl.org/projects/SDL_image/) elle contient des
+correctifs de bogue et de sécurité et qu'elle a été mise à jour pour SDL2.
+
+Tolulope: J'ai commencé à avoir les problemes avec SDL.
+
+♦ Semaine du 26 février:
+
+Asmaa:
+-Problème d'installation de SDL_image2 sur windows mais j'ai enfin réussi à tout régler.
+-Test du code pour le chargement d'image dans une fenêtre, il faut encore faire des modifications.
+-Ajout des fichiers : libjpeg-9.dll, libpng16-16.dll afin que le test de chargement d'image puisse marcher.
+-Il rester à adapter la taille de l'image à la fenêtre.
+
+
+
+♦ Semaine du 5 mars:
+
+Asmaa:
+-J'ai réussi à coder la partie sauvegarde d'image, on peut maintenant sauvegarder une image dans le même format ou dans un autre format.
+
+Tâches à faire:
+
+-Créer un diagramme du projet
+-Voir le tutorial
+-Merge la branche
+-Mettre tout le code qu'on a fait dans gitlab
+
+Tolulope: J'ai demandé l'équipe de mettre leur code sur le dépôt gitlab. J'ai eu les soucis en ce qui concerne si SDL va marcher sur tous nos ordinateurs étant donné qu'on a eu les problèmes avec SDL au début. Une fois qu'on commence à utiliser sur le dépôt, je travaillerai sur selection.
+
+♦ Semaine du 12 mars:
+
+Asmaa:
+-La partie chargement de fenêtre avec image marche très bien.
+-Pour la sélection: j'ai réussi à dessiner en cliquant une fois avec la souris un carré remplie avec une couleur sur l'image.
+-Pour les transformations j'ai fais les parties suivantes ça marche mais il reste à faire quelques petites modifications pour organiser le code:
+       • Noir et blanc (toute l'image)
+       • Négatif (toute l'image)
+
+Dorothée :
+- Merge des branches Organisation et master
+- Fichier de description du projet : modules, commandes de la cli (interface en ligne de commandes)
+(Version du 7 mars)
+- Fichier .gitignore pour les fichiers et répertoires crées et utilisés par Code Blocks
+
+♦ Semaine du 19 mars:
+
+Asmaa:
+-J'ai discuté avec Tolulope sur les caractéristiques de la séléction et nous essayons d'améliorer cette fonctionalité.
+
+Dorothée
+Mise à jour du 19 mars :
+- Suppression de la branche organisation, après son merge avec master.
+Puis mise à jour de la branche Organisation par merge avec master
+- A faire : l'interface en ligne de commandes (cli)
+Mise à jour (journal) du 24 mars :
+- Après discussion avec Asmaa, les fichiers inclus dans load.c sont maintenant dans load.h 
+et load.c inclut désormais load.h
+But : Permettre l'appel aux fonctions de load.c depuis du code externe à load.c, exemple : la cli.
+- CLI : lecture des commandes help, load, save, exit
+- La commande help affiche une liste des commandes et un descriptif succinct
+- Continuation de la lecture des commandes CLI quand une fenêtre SDL2 est ouverte
+
+♦ Semaine du 2 avril:
+
+Dorothée
+Mise à jour du 7 avril:
+- Modes de sélection : implémentation de la sélection des zones d'une image dont les composantes r,g,b des pixels
+sont identiques (c'est-à-dire sous un seuil de tolérance) à un pixel défini par l'utilisateur.
+
+♦ Semaine du 9 avril:
+
+Dorothée:
+Mise à jour du 15 avril:
+Rework du déclenchement de la visualisation d'une image : elle se fait maintenant à l'aide d'une commande view
+Ce rework est une solution au problème d'absence de réponse de la fenêtre SDL contenant l'image ouverte avec 
+la commande load. A présent l'image chargée est visualisable seulement lorsque qu'une commande view est écrite.
+La commande view ouvre une fenêtre SDL contenant l'image et les surfaces "appliquées" sur cette image.
+L'utilisateur n'a plus qu'à fermer cette fenêtre pour revenir à la CLI, et écrire d'autres commandes.
+
+♦ Semaine du 23 avril:
+
+Dorothée:
+Mise à jour du 23 avril: Compilation et linking avec Make.
+Mise à jour du 26 avril: 
+- Résolution de problèmes de compilation sur branche sélection et archivage de cette branche
+- Modes de sélections : rectangle et pixels
+       - Rework selection pixels : coloration des pixels de la couleur RGB à sélectionner, plutôt que les pixels adjacents à ces pixels
+       - Rendre la selection pixel interactive
+
+♦ Semaine du 14 mai:
+
+Dorothée:
+- Mode script : lecture des commandes depuis un fichier de script. Ce fichier de script contient éventuellement
+des commentaires sur une ligne commençant par #
+- Tests : écriture des tests unitaires pour cmdargs. je ne sais pas comment tester le reste.
+Ecriture du Makefile des fichiers de tests et du main_template
+- Retrait de duplication dans le code du projet
+- Noir et blanc sur image entière
+- Mise à jour du descriptif du projet

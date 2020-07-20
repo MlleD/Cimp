@@ -1,0 +1,5 @@
+load image1 ../images/flower.jpeg
+edit image1
+remplissage -all 170 0 170
+exit edit
+exit

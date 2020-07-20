@@ -1,0 +1,4 @@
+Pour exécuter le code du projet:
+1. Se placer dans le répertoire src
+2. Ecrire "make"
+3. Ecrire ./cimp

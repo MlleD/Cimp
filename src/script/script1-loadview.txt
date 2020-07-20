@@ -1,0 +1,6 @@
+# Chargement d'une image
+load image1 ../images/flower.jpeg
+# Visualisation de l'image
+view image1
+# Sortie du programme
+exit
