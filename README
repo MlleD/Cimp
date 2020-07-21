@@ -1,3 +1,8 @@
+Pour installer SDL2 dans Ubuntu :
+sudo apt install libsdl2-dev libsdl2-2.0-0 -y
+Pour installer SDL_image dans Unbuntu :
+sudo apt install libjpeg-dev libwebp-dev libtiff5-dev libsdl2-image-dev libsdl2-image-2.0-0 -y
+
 Pour exécuter le code du projet:
 1. Se placer dans le répertoire src
 2. Ecrire "make"
